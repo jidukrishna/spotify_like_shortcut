@@ -34,7 +34,7 @@ value=add_to_playlist()
 song = value["song"]
 artist = value["artist"]
 data=value["data"]
-image=r"D:\scrips\newicon.png"
+image="newicon.png"
 if value["status"]:
     toast=Notification(icon=image,app_id="spotify adder",title=f"Added music "+data,msg=f"Added 🩷 {song}\nby {artist}",duration="short")
     toast.show()

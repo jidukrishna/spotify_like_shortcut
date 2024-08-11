@@ -9,7 +9,7 @@ from dotenv import dotenv_values
 config=dotenv_values("spotify_data.env")
 client_id=config["client_id"]
 client_secret=config["client_secret"]
-redirect_uri=config["redirect_url"]
+redirect_uri=config["redirect_uri"]
 def add_to_playlist():
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
                                                    client_secret=client_secret,

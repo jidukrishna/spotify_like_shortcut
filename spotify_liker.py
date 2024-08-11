@@ -4,10 +4,16 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from winotify import Notification
+from dotenv import dotenv_values
+
+config=dotenv_values("spotify_data.env")
+client_id=config["client_id"]
+client_secret=config["client_secret"]
+redirect_uri=config["redirect_url"]
 def add_to_playlist():
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="enter ur client id",
-                                                   client_secret="enter your client secret",
-                                                   redirect_uri="http://google.com/callback/",
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
+                                                   client_secret=client_secret,
+                                                   redirect_uri=redirect_uri,
     scope="user-read-playback-state,playlist-modify-private,user-library-modify,user-library-read"))
 
 

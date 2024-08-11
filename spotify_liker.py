@@ -1,5 +1,5 @@
 import time
-
+import os
 import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -34,7 +34,7 @@ value=add_to_playlist()
 song = value["song"]
 artist = value["artist"]
 data=value["data"]
-image="newicon.png"
+image=os.path.join(os.getcwd(),"newicon.png")
 if value["status"]:
     toast=Notification(icon=image,app_id="spotify adder",title=f"Added music "+data,msg=f"Added 🩷 {song}\nby {artist}",duration="short")
     toast.show()

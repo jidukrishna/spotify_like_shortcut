@@ -4,6 +4,11 @@
 
  A simple python script that likes the playing song in spotify via keyboard shortcut....
 
+
+## Youtube video tutorial
+
+ [![YouTube](http://i.ytimg.com/vi/6vB3U7__b-s/hqdefault.jpg)](https://www.youtube.com/watch?v=6vB3U7__b-s)
+
 ### Description
 
 A spotify python script based on the spotipy module. This script checks for the current playing song in the spotify and retrieves the song uri (spotify unique song code).

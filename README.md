@@ -39,6 +39,11 @@ git clone https://github.com/jidukrishna/spotify_like_shortcut.git
 
 ### Executing program on windows
 
+#### click on one_click.bat to install in one go and the assigned the shortcut will be alt+ctrl+.
+
+<br>
+
+#### others can follow this step if u want custom shortcut
 * Make the changes in the spotify_data.env file.
 * Run the setup_1_file.bat
 * You will see a shortcut created. Right click on it and go to properties. Click on shortcut key and assign a shortcut (recommandation : ctrl+alt+. )

@@ -19,7 +19,7 @@ echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
 echo oLink.TargetPath = "%cd%\spotify_liker.py" >> %SCRIPT%
 
 echo oLink.WorkingDirectory = "%cd%" >>  %SCRIPT%
-echo oLink.Hotkey = "ALT+CTRL+."
+echo oLink.Hotkey = "ALT+CTRL+."  >>  %SCRIPT%
 
 echo oLink.WindowStyle = 7 >>  %SCRIPT%
 
